@@ -1,0 +1,13 @@
+serial:
+  port: /dev/ttyUSB1
+  baudRate: 115200
+  timeout: 12
+
+mqtt:
+  host: mqtt-server 
+  port: 1883
+  client: smartmeter
+  auth:
+    username: smartmeter
+    password: smartmeter
+  baseTopic: ha/smartmeter
