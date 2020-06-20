@@ -13,7 +13,7 @@ def main(args=None):
 
     # open config file
     with open('config.yaml', 'r') as configFile:
-        config = yaml.load(configFile)
+        config = yaml.load(configFile, Loader=yaml.BaseLoader)
 
     # open serial port
     ser = serial.Serial()
