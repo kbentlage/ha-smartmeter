@@ -1,11 +1,11 @@
 [Unit]
-Description=Aida Smartmeter
+Description=HA Smartmeter
 After=multi-user.target
 
 [Service]
 User=pi
 Restart=always
-WorkingDirectory=/opt/aida-smartmeter
+WorkingDirectory=/opt/ha-smartmeter
 ExecStart=/usr/bin/python -m smartmeter
 
 [Install]
